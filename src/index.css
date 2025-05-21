@@ -213,3 +213,33 @@ h3 {
     font-size: 1.5rem;
   }
 }
+
+.tasks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 1rem; /* spacing between cards */
+  padding: 1rem;
+  border: 2px solid #4b4bff; /* similar to the border in image */
+  border-radius: 8px;
+  background-color: #fff;
+  max-width: 600px;
+  margin: auto;
+}
+
+.task {
+  position: relative;
+  background-color: #e9ecef;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.task .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+}
